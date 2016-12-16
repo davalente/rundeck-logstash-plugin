@@ -43,6 +43,7 @@ rundeckPlugin(StreamingLogWriterPlugin){
             loglevel:event.loglevel.toString(),
             message:event.message,
             eventType:event.eventType,
+            serviceid:"rundeck",
         ]
 
         context.write data
